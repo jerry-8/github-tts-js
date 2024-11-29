@@ -8,7 +8,7 @@
   const langSetting = ['English', 'Putonghua', 'Cantonese'];
   const welcomeEng = ['Welcome', 'Welcome to Industrial Center', 'Nice to see you'];
   const welcomeZhCN = ['欢迎您', '欢迎您来到工業中心', '很高兴见到你'];
-  const welcomeZhHK = ['歡迎你', '歡迎嚟到工業中心', '好開心見到你'];
+  const welcomeZhHK = ['Weclome', '歡迎嚟到工業中心', '好開心見到你'];
   
   var port;
   var reader;
