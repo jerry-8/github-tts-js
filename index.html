@@ -180,17 +180,67 @@
   </nav>
  
 	<main class="container">
-	  <div class="bg-body-tertiary p-5 rounded">
-		<header class="d-flex align-items-center pb-3 mb-4 border-bottom">
-			<h1>TTS from Serial port</h1>
-		</header>
-		<p class="lead">Click <span class="badge bg-secondary">Open</span> to select the serial port.<br>Click <span class="badge bg-secondary">Test</span> to speak the default sentence.</p>
-		<div class="py-3">
-			<button class="btn btn-outline-secondary btn-lg rounded-pill px-4 me-4" type="button" id="openPortButton">Open</button>
-			<button class="btn btn-outline-secondary btn-lg rounded-pill px-4" type="button" id="speakTestButton">Test</button>
+		<div class="bg-body-tertiary p-5 rounded">
+			<header class="d-flex align-items-center pb-3 mb-4 border-bottom">
+				<h1>TTS from Serial port</h1>
+			</header>
+			<p class="lead">Click <span class="badge bg-secondary">Open</span> to select the serial port.<br>Click <span class="badge bg-secondary">Test</span> to speak the default sentence.</p>
+			<div class="py-3">
+				<button class="btn btn-outline-secondary btn-lg rounded-pill px-4 me-4" type="button" id="openPortButton">Open</button>
+				<button class="btn btn-outline-secondary btn-lg rounded-pill px-4" type="button" id="speakTestButton">Test</button>
+			</div>
+			<!--
+			<canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+			-->
+			<div class="row">
+				<div class="col-md-6 py-4 border-top">
+					<label><h5>Config Voices:</h5></label>
+					<div class="form-check form-switch py-3">
+						<input class="form-check-input" type="checkbox" role="switch" id="cardIdSwitch" style="transform: scale(1.5);" checked>
+						<label class="form-check-label" for="cardIdSwitch">&emsp;Say Card ID</label>
+					</div>
+					<div class="py-3">
+						<a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#collapseConfig" role="button" aria-expanded="false" aria-controls="collapseExample">
+						Configuration
+						</a>
+					</div>
+					<div class="collapse py-3" id="collapseConfig">
+						<label><h6>English:</h6></label>
+						<div class="input-group flex-nowrap">
+							<!--
+							<span class="input-group-text" id="addon-wrapping">English</span>
+							-->
+							<input type="text" class="form-control" id="voiceSelect1" aria-describedby="addon-wrapping">
+							<button class="btn btn-outline-secondary" type="button" id="testButton1">Test</button>
+							<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="visually-hidden">Toggle Dropdown</span>
+							 </button>
+							 <ul class="dropdown-menu dropdown-menu-end" id='voiceDropDownMenu1'></ul>
+						</div>
+						<label><h6>Putonghua:</h6></label>
+						<div class="input-group flex-nowrap">	
+							<!--<span class="input-group-text" id="addon-wrapping">Putonghua</span>-->
+							<input type="text" class="form-control" id="voiceSelect2" aria-describedby="addon-wrapping">
+							<button class="btn btn-outline-secondary" type="button" id="testButton2">Test</button>
+							<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="visually-hidden">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-end" id='voiceDropDownMenu2'></ul>
+						</div>
+						<label><h6>Cantonese:</h6></label>
+						<div class="input-group flex-nowrap">	
+							<!--<span class="input-group-text" id="addon-wrapping">Cantonese</span>-->
+							<input type="text" class="form-control" id="voiceSelect3" aria-describedby="addon-wrapping">
+							<button class="btn btn-outline-secondary" type="button" id="testButton3">Test</button>
+							<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="visually-hidden">Toggle Dropdown</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-end" id='voiceDropDownMenu3'></ul>
+						</div>
+					</div>	
+				</div>
+			</div>
 		</div>
-		<canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-	  </div>
 	</main>
 
   </body>
